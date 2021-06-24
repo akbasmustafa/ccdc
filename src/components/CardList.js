@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { CcdcContext } from "../context/CcdcContext";
 import Card from "./Card";
-import Nard from "./Nard";
 
 function CardList() {
   const { ccdcData } = useContext(CcdcContext);
