@@ -5,7 +5,7 @@ import Card from "./Card";
 function CardList() {
   const { ccdcData } = useContext(CcdcContext);
   return (
-    <div>
+    <div className="d-flex justify-content-center align-items-center flex-wrap border border-primary">
       {ccdcData
         ? ccdcData.data.map((item) => {
             const cardInfo = {

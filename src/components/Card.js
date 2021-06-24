@@ -4,16 +4,25 @@ function Card({ info }) {
   const { id, title, year, publisher, subjects, url } = info;
 
   return (
-    <div className="card m-4">
+    <div className="card col-10 col-md-5 text-start m-4">
       <div className="card-header">
-        <p>ID: {id}</p>
-        <p>Title: {title}</p>
+        <p>
+          <span className="fw-bolder">ID: </span> {id}
+        </p>
+        <p>
+          <span className="fw-bolder">Title: </span> {title}
+        </p>
       </div>
       <div className="card-body">
-        <p className="card-text">Publish Year: {year}</p>
-        <p className="card-text">Publisher: {publisher}</p>
         <p className="card-text">
-          Subjects:
+          <span className="fw-bolder">Publish Year: </span> {year}
+        </p>
+        <p className="card-text">
+          <span className="fw-bolder">Publisher: </span>
+          {publisher}
+        </p>
+        <p className="card-text">
+          <span className="fw-bolder">Subjects: </span>
           <span>
             {subjects.map(({ subject }, index) => (
               <span key={index}> {subject},</span>

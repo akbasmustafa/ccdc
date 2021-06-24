@@ -1,6 +1,7 @@
 import { CcdcProvider } from "./context/CcdcContext";
 import "./App.css";
 import CardList from "./components/CardList";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -10,6 +11,9 @@ function App() {
           <h1>Welcome CCDC Assessment</h1>
         </header>
         <CardList />
+        <footer>
+          <Footer />
+        </footer>
       </div>
     </CcdcProvider>
   );
