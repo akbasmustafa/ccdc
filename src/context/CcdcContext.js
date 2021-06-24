@@ -3,7 +3,7 @@ import React, { createContext, useEffect, useState } from "react";
 export const CcdcContext = createContext();
 
 export const CcdcProvider = ({ children }) => {
-  const [ccdcData, setCcdcData] = useState(null);
+  const [ccdcData, setCcdcData] = useState();
   useEffect(() => {
     fetch("https://api.test.datacite.org/dois?query=prefix:10.5517 ")
       .then((res) => res.json())
